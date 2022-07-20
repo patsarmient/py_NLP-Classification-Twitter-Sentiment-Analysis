@@ -107,13 +107,14 @@ provides the features to train the classification models.
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
-![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
+
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
 
 #### Confusion Matrix
-![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
 
 #### ROC Curve
-![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
 
 
 
@@ -144,7 +145,7 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
   negative, and movies with more positive sentiment scores appear less positive when averaged.
 
   ##### Count of Tweets per Sentiment Type
-  ![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
+  ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
     
     
 ### Restrictive twitter demographics
@@ -155,4 +156,4 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
 
     #### Ex: Sentiment Scores Top Ranked (1) vs Non-Top Ranked (0)
     A small corpus and an underrepresented demographic resulted in more positive tweets for non-top-ranked movies listed as 0 than top-ranked movies listed as 1.
-    ![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
+    ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
