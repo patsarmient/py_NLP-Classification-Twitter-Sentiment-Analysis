@@ -106,7 +106,7 @@ provides the features to train the classification models.
 ## Results
 
 Results show that the Bernoulli Naïve Bayes classifier slightly outperforms the Logistic Regression model with F1-scores of 0.53 and 0.49, respectively. 
-However, the Confusion Matrix shows a bias toward movies not in the top 10, that is the majority. The ROC curve indicates a low accuracy score, one that is slightly better than a guess. 
+However, the Confusion Matrix shows a bias toward movies not in the top 10, that is the majority, and the ROC curve indicates a low accuracy score, one that is slightly better than a guess. 
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
