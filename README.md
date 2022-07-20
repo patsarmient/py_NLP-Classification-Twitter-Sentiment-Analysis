@@ -107,6 +107,7 @@ provides the features to train the classification models.
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
+
 ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
 
 #### Confusion Matrix
