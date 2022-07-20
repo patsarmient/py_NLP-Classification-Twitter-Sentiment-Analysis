@@ -28,9 +28,9 @@ once in Netflix's weekly top ten streamed movies list.
 
 #### Movie List - 106 movies 
 
-The online repository "What's on Netflix" is the source for the list of 106 streaming Netflix movie names manually extracted.
+The online movie repository "What's on Netflix" posts a monthly list of movies streaming on Netflix and is the source of the list of 106 movie names manually extracted for a period of three months.
 
-Netflix releases a weekly list of top ten ranked movies used to match movies with their corresponding binary labels of top ten (1) or not (0) to train the machine learning classifiers. 
+Netflix releases a weekly list of top ten ranked movies used to label the chosen movies with the binary labels, 1 for movies in the top 10 chart at least once and 0 for movies never in the top 10 chart. 
 
 ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_1_Movie_List.png)
 
@@ -69,7 +69,7 @@ valance of 1.9 while great is 3.4 (Hutto and Gilbert 2014, 220).
 
 
 ### Final Data Features
-Once the model produces the sentiment score for all tweets calculating 
+Once the model produces the sentiment score for all tweets, calculating 
 [a count of tweets] & [an average sentiment score for each movie] 
 provides the features to train the classification models.
 
@@ -85,8 +85,8 @@ provides the features to train the classification models.
   ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Naive_Bayes.png)
   
   The goal of Bernoulli Naïve Bayes is to calculate the conditional 
-  probability of the features, i.e., mean sentiment score or number of tweets given a class or label, 
-  i.e., top ten, or not for a particular movie (Esposito and Esposito 2020, chap.14).
+  probability of the features, i.e., mean sentiment score or number of tweets given a binary class or label, 
+  i.e., top ten (1), or not (0) for a particular movie (Esposito and Esposito 2020, chap.14).
 
   #### Logistic Regression
 
@@ -104,6 +104,9 @@ provides the features to train the classification models.
 
 
 ## Results
+
+Results show that the Bernoulli Naïve Bayes classifier slightly outperforms the Logistic Regression model with F1-scores of 0.53 and 0.49, respectively. 
+However, the Confusion Matrix shows a bias toward movies not in the top 10, that is the majority. The ROC curve indicates a low accuracy score, one that is slightly better than a guess. 
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
