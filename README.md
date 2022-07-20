@@ -73,7 +73,6 @@ Once the model produces the sentiment score for all tweets calculating
 [a count of tweets] & [an average sentiment score for each movie] 
 provides the features to train the classification models.
 
-##### Data Features
 ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_3_Classification_Data.png)
 
 
@@ -97,7 +96,9 @@ provides the features to train the classification models.
   This binary classifier weighs the sum of the input features plus a bias term. 
   
   It then measures the logistic of the result by using a sigmoid function shown below, which outputs a number between 0 and 1 (Geron 2019, chap. 4):  
+  
   ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Logistic_Regression.png)
+  
   Source: (Geron 2019) https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch04.html#idm45022189757752
 
 
@@ -106,13 +107,13 @@ provides the features to train the classification models.
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
-![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
 
 #### Confusion Matrix
-![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
 
 #### ROC Curve
-![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
 
 
 
@@ -143,7 +144,7 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
   negative, and movies with more positive sentiment scores appear less positive when averaged.
 
   ##### Count of Tweets per Sentiment Type
-  ![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
+  ![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
     
     
 ### Restrictive twitter demographics
@@ -154,4 +155,4 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
 
     #### Ex: Sentiment Scores Top Ranked (1) vs Non-Top Ranked (0)
     A small corpus and an underrepresented demographic resulted in more positive tweets for non-top-ranked movies listed as 0 than top-ranked movies listed as 1.
-    ![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
+    ![App Screenshot](https://github.com/patsarmient/py_NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
