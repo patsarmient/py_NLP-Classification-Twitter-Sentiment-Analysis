@@ -32,7 +32,7 @@ The online repository "What's on Netflix" is the source for the list of 106 stre
 
 Netflix releases a weekly list of top ten ranked movies used to match movies with their corresponding binary labels of top ten (1) or not (0) to train the machine learning classifiers. 
 
-![Dataframe Movie List](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_1_Movie_List.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_1_Movie_List.png)
 
 #### Tweets - 46,270 tweets
 
@@ -65,7 +65,7 @@ Sentiment scores reflect sentiment polarity, positive to negative, and sentiment
 valance of 1.9 while great is 3.4 (Hutto and Gilbert 2014, 220). 
 
 ##### Sentiment Analysis Dataframe
-![Sentiment Analysis Dataframe](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_2_Sentiment_Analysis.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_2_Sentiment_Analysis.png)
 
 
 ### Final Data Features
@@ -74,7 +74,7 @@ Once the model produces the sentiment score for all tweets calculating
 provides the features to train the classification models.
 
 ##### Data Features
-![Data Features](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_3_Classification_Data.png)
+![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Dataframe_3_Classification_Data.png)
 
 
 ### Classification models
@@ -83,7 +83,7 @@ provides the features to train the classification models.
   
   The classification algorithm Bernoulli Naïve Bayes, based on Bayes’ Theorem, measures 
   the independent probability of events A (label) and B (features) as:
-  ![Naive Bayes Formula](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Naive_Bayes.png)
+  ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Naive_Bayes.png)
   
   The goal of Bernoulli Naïve Bayes is to calculate the conditional 
   probability of the features, i.e., mean sentiment score or number of tweets given a class or label, 
@@ -96,10 +96,8 @@ provides the features to train the classification models.
   
   This binary classifier weighs the sum of the input features plus a bias term. 
   
-  It then measures the logistic of the result by using a sigmoid function shown below, which outputs a number between 0 and 1 (Geron 2019, chap. 4).  
-  
-  Logistic Function
-  ![Logistic Regression Formula](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Logistic_Regression.png)
+  It then measures the logistic of the result by using a sigmoid function shown below, which outputs a number between 0 and 1 (Geron 2019, chap. 4):  
+  ![App Screenshot](https://github.com/patsarmient/py_NLP-Classification-Twitter-Sentiment-Analysis/blob/main/z_Methods_Formula_Logistic_Regression.png)
   Source: (Geron 2019) https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/ch04.html#idm45022189757752
 
 
@@ -108,13 +106,13 @@ provides the features to train the classification models.
 
 #### F1-Score
 Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores of 53% and 49%, respectively.
-![F1 Score](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
+![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_F1_Score.png)
 
 #### Confusion Matrix
-![Confusion Matrix](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
+![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Confusion_Matrix.png)
 
 #### ROC Curve
-![ROC Curve](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
+![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_ROC_Curve.png)
 
 
 
@@ -126,7 +124,7 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
 
 - Given the constant addition of new streaming movies on Netflix, tweets about older movies become scarce as new movies become a popular topic.
 
-- The two weeks following the release of a movie are pivotal to building a comprehensive corpus of tweets for that movie. Missing this time frame or capping the number of tweets affects the training model due to an incomplete dataset. 
+- The two weeks following the release of a movie are pivotal to building a comprehensive corpus of tweets for that movie. Missing this time frame or capping the number   of tweets affects the training model due to an incomplete dataset. 
 
 - Due to these constraints, in this study, only 28% of movies queried have 100 tweets or more from which to assign an accurate mean sentiment score.
 
@@ -140,20 +138,20 @@ Bernoulli Naïve Bayes slightly outperforms Logistic Regression with F1-scores o
 - Conventional methods train on the actual tweets and their corresponding sentiment scores.
 
 - This study also includes neutral sentiments (tweets that do not include opinion word markers and therefore have a score of 0). 
+  
+  As shown in the chart below, many tweets are neutral, diminishing the average sentiment score; consequently, movies with more negative sentiment scores appear less 
+  negative, and movies with more positive sentiment scores appear less positive when averaged.
 
-    As shown in the chart below, many tweets are neutral, diminishing the average sentiment score; consequently, movies with more negative sentiment scores appear less 
-    negative, and movies with more positive sentiment scores appear less positive when averaged.
-
-    ##### Count of Tweets per Sentiment Type
-    ![Count of tweets per Sentiment](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
+  ##### Count of Tweets per Sentiment Type
+  ![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Sentiment_Type.png)
     
     
 ### Restrictive twitter demographics
 
 - A Pew Research Center study (Shah, Remy, and Smith, 2020) found that 92% of tweets come from 10% of their users, meaning that most users engage by re-tweeting,         liking, or commenting on original posts. 
 
-- Another report found that 59% of Twitter users are between the ages of 25 and 49, male users outnumber females, and theplatform only comprises 8% of social media users (Dean 2022). 
+- Another report found that 59% of Twitter users are between the ages of 25 and 49, male users outnumber females, and theplatform only comprises 8% of social media       users (Dean 2022). 
 
     #### Ex: Sentiment Scores Top Ranked (1) vs Non-Top Ranked (0)
     A small corpus and an underrepresented demographic resulted in more positive tweets for non-top-ranked movies listed as 0 than top-ranked movies listed as 1.
-    ![Count of tweets per Rank and Sentiment](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
+    ![App Screenshot](https://github.com/patsarmient/NLP_Classification_Twitter-Sentiment-Analysis/blob/main/z_Results_Tweets_Top_Rank_Per_Sentiment_Type.png)
